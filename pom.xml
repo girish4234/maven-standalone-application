@@ -32,6 +32,18 @@
 		</dependency>
 
 	</dependencies>
+	<distrubutionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>maven release repository</name>
+			<url>http://ec2-54-144-38-12.compute-1.amazonaws.com:8081/repository/maven-releases/</url>
+		</repository>
+            <snapshotRepository>
+		    <id>nexus</id>
+		    <name>maven snapshot releases</name>
+		    <url>http://ec2-54-144-38-12.compute-1.amazonaws.com:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distrubutionManagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
